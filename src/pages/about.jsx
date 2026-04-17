@@ -23,8 +23,8 @@ export default function About() {
                                 About AkoweAI
                             </h1>
                             <p className="text-xl text-blue-100 leading-relaxed max-w-2xl">
-                                We're building the financial infrastructure for
-                                Africa's informal economy.
+                                We&apos;re building the financial infrastructure
+                                for Africa&apos;s informal economy.
                             </p>
                         </motion.div>
                     </div>
@@ -44,8 +44,9 @@ export default function About() {
                                 <p className="text-lg text-gray-600 mb-4">
                                     Nigeria has 40+ million micro, small, and
                                     medium enterprises (MSMEs), yet 80% are
-                                    financially invisible. This means they can't
-                                    access credit, insurance, or growth capital.
+                                    financially invisible. This means they
+                                    can&apos;t access credit, insurance, or
+                                    growth capital.
                                 </p>
                                 <p className="text-lg text-gray-600">
                                     AkoweAI is the bridge between informal

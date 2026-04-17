@@ -22,9 +22,10 @@ export default function Privacy() {
                                 1. Introduction
                             </h2>
                             <p>
-                                AkoweAI ("we", "us", "our" or "Company")
-                                operates the akowe.ai website and WhatsApp bot
-                                (the "Service").
+                                AkoweAI (&quot;we&quot;, &quot;us&quot;,
+                                &quot;our&quot; or &quot;Company&quot;) operates
+                                the akowe.ai website and WhatsApp bot (the
+                                &quot;Service&quot;).
                             </p>
                             <p>
                                 This page informs you of our policies regarding
