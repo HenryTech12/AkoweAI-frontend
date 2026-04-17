@@ -1,0 +1,213 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./variables.css";
+
+/* Import Modern Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&family=Fira+Code:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "'Plus Jakarta Sans'", "'Segoe UI'", system-ui, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+
+/* Headings with Modern Font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "'Space Grotesk'", "'Plus Jakarta Sans'", system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+/* Code blocks */
+code,
+pre {
+    font-family: "'Fira Code'", monospace;
+}
+
+/* Modern Button Styles */
+button,
+a[role="button"] {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+button:hover,
+a[role="button"]:hover {
+    transform: translateY(-2px);
+}
+
+/* Smooth Transitions */
+*::before,
+*::after {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glow Effects */
+.glow-effect {
+    background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.2),
+        rgba(34, 197, 94, 0.2)
+    );
+    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.15));
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+    background: rgba(31, 41, 55, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(31, 41, 55, 0.2);
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0f172a;
+        color: #f1f5f9;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #f8fafc;
+    }
+}
+
+/* Custom Scrollbar - Modern */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #f1f1f1, #e5e5e5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #888, #555);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #555, #333);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 52px;
+        line-height: 1.15;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    h3 {
+        font-size: 28px;
+    }
+}
+
+/* Touch-friendly buttons */
+@media (hover: none) and (pointer: coarse) {
+    button,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* Smooth Page Transitions */
+@keyframes pageIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: pageIn 0.4s ease-out;
+}
+
+/* Selection Highlight */
+::selection {
+    background: linear-gradient(135deg, #3b82f6, #22c55e);
+    color: white;
+}
+
+::-moz-selection {
+    background: linear-gradient(135deg, #3b82f6, #22c55e);
+    color: white;
+}
